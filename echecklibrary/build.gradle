@@ -32,4 +32,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     compile 'com.lzy.net:okgo:3.0.4'
     implementation files('libs/AMap_Location_V4.5.0_20190121.jar')
+    implementation files('libs/microlog4android-1.0.0.jar')
+    implementation files('libs/gson-2.6.1.jar')
 }

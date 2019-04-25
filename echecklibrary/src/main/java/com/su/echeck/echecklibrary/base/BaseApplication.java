@@ -2,6 +2,7 @@ package com.su.echeck.echecklibrary.base;
 
 import android.app.Application;
 
+import com.google.code.microlog4android.config.PropertyConfigurator;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.cache.CacheEntity;
 import com.lzy.okgo.cache.CacheMode;
@@ -20,6 +21,8 @@ public class BaseApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        PropertyConfigurator.getConfigurator(this).configure();
         initOkGo();
     }
 
